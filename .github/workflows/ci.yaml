@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-go@v2
         with:
             go-version: 1.15
-            
+
       - run: go test
       - run: go run math.go
   
@@ -27,5 +27,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: danubiobwm/CI-FC2.0-GO:latest
+          tags: danubiobwm/ci-fc2.0-go:latest
           
